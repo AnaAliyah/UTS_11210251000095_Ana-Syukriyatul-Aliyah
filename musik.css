@@ -1,0 +1,319 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  html {
+    margin: 0;
+    padding: 0;
+    background-color: floralwhite;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  p {line-height: 30px;}
+  
+  .layar-dalam {
+    width: 1000px;
+    margin: auto;
+  }
+  
+  .layar-penuh {
+    width: 100%;
+  }
+  
+  nav {
+    z-index: 100;
+    text-align: center;
+    position: fixed;
+    line-height: 50px;
+    width: 100%;
+    font-size: 15px;
+    transition: background-color 0.5s ease;
+  }
+  
+  nav .logo {
+    float: left;
+    position: relative;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+  nav .logo img {
+    vertical-align: middle;
+    width: 130px;
+    margin-top: 20px;
+  }
+  
+  nav .menu {
+    float: right;
+    height: 50px;
+    max-width: 860px;
+  }
+  
+  nav .menu ul {
+    
+    margin: 5;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav .menu ul li {
+    list-style-type: none;
+    float: left;
+  }
+  
+  nav ul li a {
+    color: floralwhite;
+    text-align: center;
+    padding: 0px 14px 0px 14px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: none;
+    background-color:rgb(224, 139, 77);
+  }
+  
+  nav ul li ul.dropdown {
+    background: rgb(243, 224, 186);
+    position:absolute;
+    z-index: 999;
+    display: none;
+    
+  }
+  
+  nav ul li:hover ul.dropdown {
+    display: block;
+  }
+  
+  
+  /* pengaturan header */
+  header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+  }
+  header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+    width: 1300px;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+    z-index: -1;
+  }
+  .tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+  .tombol-menu .garis {
+    height: 3px;
+    background-color: floralwhite;
+  }
+
+  nav.putih {
+    background-color: floralwhite;
+  }
+  nav.putih .tombol-menu .garis {
+    background-color: rgb(53, 53, 53);
+  }
+  nav.putih ul li a {
+    color: rgb(53, 53, 53);
+  }
+
+  h3 {
+    font-size: 28px;
+    margin: 0px 90px 0px 90px;
+    text-align: center;
+  }
+
+  h3::after {
+    content: "";
+    border-bottom: 5px solid rgb(81, 78, 78);
+    width: 100px;
+    display: block;
+    margin: 10px auto;
+    
+  }
+  
+  dt {background-color: chocolate;
+    padding: 10px;
+    font-size: 18px;
+    color: floralwhite;
+  }
+  
+  dd {
+  text-align: justify;
+  padding: 10px;
+  box-sizing: border-box; 
+}
+  
+  .MusikBetawi {
+    margin: 0px 90px 0px 90px;
+    line-height: 30px;
+  }
+  
+  .MusikBetawi dd {
+    background-color: antiquewhite;
+  }
+
+  .MusikBetawi img {background-color: bisque;
+  width: 190px;
+  border-radius: 75px;
+  float: right;
+  margin: 10px 20px 10px 10px;
+  padding: 10px;}
+
+  .clear {clear:right;}
+
+  .Kebudayaan {
+    margin: 0px 90px 0px 90px;
+    text-align: justify;
+  }
+
+
+  footer {
+    padding: 50px 0px 50px 0px;
+    background-color:rgb(109, 51, 10);
+    color: floralwhite;
+  }
+  footer .layar-dalam {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .layar-dalam div {
+    width: 26%;
+  }
+  footer .layar-dalam h4 {
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  #contactus h4 {
+    color: rgb(244, 241, 235);
+    font-size: 20px;
+  }
+  
+  #contactus h4::before {
+    content: "";
+    border-bottom: 5px solid rgb(250, 218, 179);
+    width: 50px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  footer .layar-dalam .copyright {
+    width: 100%;
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid floralwhite;
+    text-align: center;
+    line-height: 35px;
+  }
+  
+  footer .sosmed a {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgb(236, 231, 226);
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    margin: 10px 10px 0px 0px;
+    line-height: 50px;
+  }
+  
+  footer .sosmed a:hover {
+    background-color: rgb(88, 88, 88);
+  }
+  
+  footer .contact {
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  footer .contact table th i {
+    display: inline-block;
+    border-radius: 10%;
+    background-color: floralwhite;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    margin: 8px 0px 0px 0px;
+    line-height: 30px;
+    color: rgb(50, 49, 49);
+  }
+  
+  footer .contact table th a {
+    text-decoration: none;
+    color: rgb(229, 212, 179);
+  }
+  
+  footer .contact table .no-link {
+    color: rgb(229, 212, 179);
+  }
+  
+  footer .alamat iframe {
+    width: 300px;
+    height: 250px;
+  }
+  
+  footer .alamat {
+    font-size: 14px;
+    color: rgb(229, 212, 179)
+  }
+
+
+  @media screen and (max-width: 991.98px) {
+    .layar-dalam {
+      width: 90%;
+    }
+
+    nav .menu ul {
+        display: none;
+        margin-top: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }  
+    nav .menu ul li {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        background-color: floralwhite;
+        line-height: 40px;
+      }
+    nav .menu ul li a {
+        color: rgb(62, 60, 60);
+      }
+
+      nav ul li ul.dropdown li {
+        display: none;
+      } 
+
+    .tombol-menu {
+      display: flex;
+    }
+}

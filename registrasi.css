@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: verdana;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+    z-index: -1;
+  }
+
+  video {
+    position: absolute;
+    object-fit: cover;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+  }
+
+.registrasi {
+    max-width: 650px;
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: rgb(60, 30, 10);
+    box-shadow: 0 15px 20px black;
+    z-index: 100;
+    position: relative;
+    
+}
+
+h2 {
+    font-family: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: floralwhite;
+    padding-bottom: 8px;
+    border-bottom: 3px solid floralwhite;
+}
+
+.konten {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.input-box:nth-child(2n) {
+    justify-content: end;
+}
+
+.input-box label, .gender-title {
+    width: 95%;
+    color: floralwhite;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.gender-title {
+    font-size: 16px;
+}
+
+.input-box input {
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #959595;
+    outline: none;
+}
+
+#jam {
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #959595;
+    outline: none;
+}
+
+.input-box input:is(:focus, :valid) {
+    box-shadow: chocolate;
+}
+
+.kategori label {
+    padding: 0 50px 0px 5px;
+    font-size: 14px;
+}
+
+.kategori {
+    color: rgb(197, 194, 194);
+}
+
+.kategori label, .kategori input {
+    cursor: pointer;
+}
+
+.tombol {
+    margin: 15px 0;
+}
+
+.tombol button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, chocolate, rgb(250, 250, 20));
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tombol button:hover {
+    background-image: linear-gradient(to right, rgb(231, 191, 163), rgb(215, 215, 168));
+}
+
+
+@media screen and (max-width: 991.98px){
+    .registrasi {
+        width: 50%;
+    }
+    .konten {
+        max-height: 400px;
+        overflow: auto;
+    }
+    .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .input-box:nth-child(2n) {
+        justify-content: space-between;
+    }
+    .kategori {
+        display: flex;
+        justify-content: space-between;
+        width: 40%
+    }
+    .konten::-webkit-scrollbar {
+        width: 0;
+    }
+}

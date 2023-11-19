@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetawiJourney</title>
+    <link rel="stylesheet" href="registrasi.css">
+    <link rel="shortcut icon" href="Images/BetawiJourney.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="overlay"></div>
+        <video autoplay muted loop>
+          <source src="Images/KebudayaanBetawi.mp4" type="video/mp4" />
+        </video>
+
+    <div class="registrasi">
+        <form action="" method="post">
+            <h2>Form Registrasi Tur Kebudayaan Betawi</h2>
+            <div class="konten">
+                <div class="input-box">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" placeholder="Masukkan Nama Lengkap" name="nama" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Masukkan Email" name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="telephone">Nomor Telephone</label>
+                    <input type="text" placeholder="Masukkan Nomor Telephone" name="telephone" required>
+                </div>
+                <div class="input-box">
+                    <label for="alamat">Alamat</label>
+                    <input type="text" placeholder="Masukkan Alamat" name="alamat" required>
+                </div>
+                <div class="input-box">
+                    <label for="tanggal">Tanggal Perjalanan</label>
+                    <input type="date" name="tanggal" required>
+                </div>
+                <div class="input-box">
+                    <label for="jam">Jam Perjalanan</label>
+                    <select id="jam" name="jam" required>
+                        <option value="07.30">07.30 Pagi</option>
+                        <option value="10.30">10.30 Pagi</option>
+                        <option value="14.30">14.30 Siang</option>
+                    </select>
+                </div>
+                <span class="gender-title">Jenis Kelamin</span>
+                <div class="kategori">
+                    <input type="radio" name="gender" id="pria">
+                    <label for="pria">Pria</label>
+                    <input type="radio" name="gender" id="wanita">
+                    <label for="wanita">Wanita</label>
+                </div>
+            </div>
+            <div class="tombol">
+                <button onclick="myFunction()">Submit</button>
+            </div>
+        </form>
+
+    </div>
+    <script src="registrasi.js"></script>
+</body>
+</html>

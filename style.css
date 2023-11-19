@@ -106,6 +106,7 @@ header video {
   object-fit: cover;
   z-index: -2;
   width: 100%;
+  height: auto;
 }
 header .intro {
   z-index: 100;
